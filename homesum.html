@@ -92,16 +92,16 @@
                 document.getElementById('panelSize').textContent = panelSize;
                 document.getElementById('panelQuantity').textContent = panelQuantity;
                 document.getElementById('totalPower').textContent = totalPower;
-                document.getElementById('totalPrice').textContent = addCommas(totalPrice.toFixed(2)) + ' บาท'; // เพิ่มลูกน้ำในราคาแผงโซลาร์เซลล์
+                document.getElementById('totalPrice').textContent = addCommas(totalPrice.toFixed(2)) + ''; // เพิ่มลูกน้ำในราคาแผงโซลาร์เซลล์
             }
 
             if (batterySize && inverterSize && totalCost) {
-                document.getElementById('batterySize').textContent = batterySize + ' Ah';
-                document.getElementById('inverterSize').textContent = inverterSize + ' วัตต์';
-                document.getElementById('totalCost').textContent = addCommas(totalCost.toFixed(2)) + ' บาท';
+                document.getElementById('batterySize').textContent = batterySize + '';
+                document.getElementById('inverterSize').textContent = inverterSize + '';
+                document.getElementById('totalCost').textContent = addCommas(totalCost.toFixed(2)) + '';
 
                 const totalInstallationCost = totalPrice + totalCost;
-                document.getElementById('totalInstallationCost').textContent = addCommas(totalInstallationCost.toFixed(2)) + ' บาท';
+                document.getElementById('totalInstallationCost').textContent = addCommas(totalInstallationCost.toFixed(2)) + '';
             }
         });
 
